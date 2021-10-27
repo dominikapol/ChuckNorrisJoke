@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1t2-l7-yzn">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Joke View Controller-->
+        <scene sceneID="rpV-mr-Pav">
+            <objects>
+                <viewController storyboardIdentifier="JokeViewController" id="1t2-l7-yzn" customClass="JokeViewController" customModule="ChuckNorrisJokes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dHv-Ld-GZd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NR6-Se-mXa">
+                                <rect key="frame" x="87" y="125" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="TXA-Mn-pcy"/>
+                                    <constraint firstAttribute="width" constant="240" id="fM4-YW-97g"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFN-nA-KaK">
+                                <rect key="frame" x="0.0" y="283" width="414" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lO1-Lq-3c2"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FFN-nA-KaK" firstAttribute="centerX" secondItem="dHv-Ld-GZd" secondAttribute="centerX" id="TTq-tU-XTJ"/>
+                            <constraint firstItem="FFN-nA-KaK" firstAttribute="leading" secondItem="lO1-Lq-3c2" secondAttribute="leading" id="TTs-dr-ijg"/>
+                            <constraint firstItem="NR6-Se-mXa" firstAttribute="top" secondItem="lO1-Lq-3c2" secondAttribute="top" constant="81" id="bXQ-8k-PSO"/>
+                            <constraint firstItem="NR6-Se-mXa" firstAttribute="centerX" secondItem="dHv-Ld-GZd" secondAttribute="centerX" id="v4J-vh-5W4"/>
+                            <constraint firstItem="FFN-nA-KaK" firstAttribute="top" secondItem="NR6-Se-mXa" secondAttribute="bottom" constant="30" id="vbT-sk-bOk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="NR6-Se-mXa" id="9iG-sb-USA"/>
+                        <outlet property="textLabel" destination="FFN-nA-KaK" id="Ml6-y4-QhS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J7B-uH-bVm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112" y="89"/>
+        </scene>
+    </scenes>
+</document>
